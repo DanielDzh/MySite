@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>DanielDzh</title>
+   <link rel="stylesheet" href="MySite.css">
+</head>
+
+<body>
+   <header>
+      <div id="logo" onclick="slowScroll('#top')">
+         <img src="img/72C2D40F-9EA1-4B5E-B0ED-B1A857D9AF08.jpg" alt="">
+         <span>Danone.dz</span>
+      </div>
+      <div id="about">
+         <a href="#" title="Возможности" onclick="slowScroll('#main')">Про меня</a>
+         <a href="#" onclick="slowScroll('#overview')" title="Преимущества">Навыки</a>
+         <a href="#" onclick="slowScroll('#contacts')" title="Контакты">Контакты</a>
+         <!-- <a href="#" onclick="slowScroll('#faq')" title="Ответы на вопросы">FAQ</a> -->
+      </div>
+   </header>
+   <br class="content">
+   <div id="top">
+      <h1>Как способ жизни!</h1>
+      <h2>
+         <svg viewbox="0 2 200 16">
+            <defs>
+               <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
+                  <stop offset="5%" stop-color="#17bc9b" />
+                  <stop offset="95%" stop-color="#EE3769" />
+               </linearGradient>
+               <pattern id="wave" x="0" y="2.5" width="120" height="30" patternUnits="userSpaceOnUse">
+                  <path id="wavePath" d="M-40 9 Q-30 7 -20 9 T0 9 T20 9 T40 9 T60 9 T80 9 T100 9 T120 9 V20 H-40z"
+                     mask="url(#mask)" fill="url(#gradient)">
+                     <animateTransform attributeName="transform" begin="0s" dur="1.5s" type="translate" from="0,0"
+                        to="40,0" repeatCount="indefinite" />
+                  </path>
+               </pattern>
+            </defs>
+            <text text-anchor="middle" x="99" y="15" font-size="12" fill="white" fill-opacity="1">WEB
+               DEVELOPER</text>
+            <text text-anchor="middle" x="99" y="15" font-size="12" fill="url(#wave)" fill-opacity="1">WEB
+               DEVELOPER</text>
+
+         </svg>
+      </h2>
+
+      <h3>- Dzhyzhula Danik -</h3>
+   </div>
+
+   <div id="main">
+      <div class="intro">
+         <h2></h2>
+         <span></span>
+      </div>
+      <div class="text">
+         <h1> Про меня </h1>
+         <div style="margin-bottom: 30px;">27.01.2002 <br>
+            Положительный, коммуникабельный, любитель командной работы, всегда рад помочь, если нужно.
+            Быстро обучаюсь, так как с детства любил учить что-то новое и осваивать новые навыки.<br>
+            Занимаюсь активно спортом, хожу в спортзал, на уровне любителя занимаюсь волейболом.
+            Люблю читать книги, достаточно много прочитал литературы различных направлений.
+            Также увлекаюсь шахматами с детства по сегодняшний день.<br>
+            С программированием знаком давно, так как 75% друзей и знакомых этим занимаются,
+            я также заинтересовался и понял что мне это нравится, так как у меня математический склад ума.
+         </div>
+         <h1> Образование </h1>
+         <div>Среднее общее образование</div>
+         <span class="years">(2008-2019)</span>
+         <div>IT Academy</div>
+         <span>(2020 - 2022)</span>
+         <h2> Курсы </h2>
+         <div>
+            <a class="curs" href="https://ru.hexlet.io/">Hexlet</a>
+         </div>
+         <div>*</div>
+         <div>
+            <a class="curs" href="https://learn.javascript.ru/">learn.javascript</a>
+         </div>
+         <div>*</div>
+         <div>
+            <a class="curs" href="https://www.freecodecamp.org/">freecodecamp</a>
+         </div>
+         <div>*</div>
+      </div>
+   </div>
+
+   <div id="overview">
+      <h2>Мои навыки</h2>
+      <h4>Улучшаются с каждым днём</h4>
+      <!-- <div class="progress">
+            <div class="progress__box">
+               <div class="progress__bar"></div>
+               <div id="out" class="out-num">0</div>
+            </div>
+         </div>
+         <div class="progress_2">
+            <div class="progress__box">
+               <div class="progress__bar_2"></div>
+               <div id="out" class="out-num">0</div>
+            </div>
+         </div> -->
+
+      <div class="training">
+
+         <section class="svg-container">
+            <h1>HTML</h1>
+
+            <svg class="circle" xmlns="http://www.w3.org/2000/svg">
+
+               <g>
+                  <ellipse class="background_html" ry="60" rx="60" cy="62.5" cx="62.5" stroke-width="10" />
+
+                  <ellipse class="foreground_html" ry="60" rx="60" cy="62.5" cx="62.5" stroke-width="10" />
+                  <div id="out_html" class="out-num">0</div>
+
+               </g>
+            </svg>
+         </section>
+         <section class="svg-container">
+            <h1>REACTJS</h1>
+
+            <svg class="circle" xmlns="http://www.w3.org/2000/svg">
+
+               <g>
+                  <ellipse class="background_react" ry="60" rx="60" cy="62.5" cx="62.5" stroke-width="10" />
+
+                  <ellipse class="foreground_react" ry="60" rx="60" cy="62.5" cx="62.5" stroke-width="10" />
+                  <div id="out_react" class="out-num">0</div>
+
+               </g>
+            </svg>
+         </section>
+         <section class="svg-container">
+            <h1>BOOTSTRAP</h1>
+
+            <svg class="circle" xmlns="http://www.w3.org/2000/svg">
+
+               <g>
+                  <ellipse class="background_bs" ry="60" rx="60" cy="62.5" cx="62.5" stroke-width="10" />
+
+                  <ellipse class="foreground_bs" ry="60" rx="60" cy="62.5" cx="62.5" stroke-width="10" />
+                  <div id="out_bs" class="out-num">0</div>
+
+               </g>
+            </svg>
+         </section>
+         <section class="svg-container">
+            <h1>JQUERY</h1>
+
+            <svg class="circle" xmlns="http://www.w3.org/2000/svg">
+
+               <g>
+                  <ellipse class="background_jq" ry="60" rx="60" cy="62.5" cx="62.5" stroke-width="10" />
+
+                  <ellipse class="foreground_jq" ry="60" rx="60" cy="62.5" cx="62.5" stroke-width="10" />
+                  <div id="out_jq" class="out-num">0</div>
+
+               </g>
+            </svg>
+         </section>
+         <section class="svg-container">
+            <h1>CSS</h1>
+
+            <svg class="circle" xmlns="http://www.w3.org/2000/svg">
+               <g>
+                  <ellipse class="background_css" ry="60" rx="60" cy="62.5" cx="62.5" stroke-width="10" />
+                  <!-- <ellipse class="foreground_22" ry="60" rx="60" cy="62.5" cx="62.5" stroke-width="12" /> -->
+                  <ellipse class="foreground_css" ry="60" rx="60" cy="62.5" cx="62.5" stroke-width="10" />
+
+                  <div id="out_css" class="out-num">0</div>
+               </g>
+            </svg>
+         </section>
+         <section class="svg-container">
+            <h1>JAVASCRIPT</h1>
+
+            <svg class="circle" xmlns="http://www.w3.org/2000/svg">
+               <g>
+                  <ellipse class="background_js" ry="60" rx="60" cy="62.5" cx="62.5" stroke-width="10" />
+                  <ellipse class="foreground_js" ry="60" rx="60" cy="62.5" cx="62.5" stroke-width="10" />
+                  <div id="out_js" class="out-num">0</div>
+               </g>
+            </svg>
+         </section>
+      </div>
+      <!-- <div class="img">
+            <img src="https://itproger.com/img/courses/1532975967.jpg" alt="">
+            <span>Изучение языка Ruby для начинающих</span>
+         </div>
+         <div class="img">
+            <img src="https://itproger.com/img/courses/1530341233.jpg" alt="">
+            <span>Уроки PhotoShop для начинающих</span>
+         </div> -->
+   </div>
+   </div>
+   <footer>
+      <div class="CONTACTS">
+         <svg viewBox="0 0 960 300">
+            <symbol id="s-text">
+               <text class="class" text-anchor="middle" x="50%" y="80%">CONTACTS</text>
+            </symbol>
+
+            <g class="g-ants">
+               <use xlink:href="#s-text" class="text-copy"></use>
+               <use xlink:href="#s-text" class="text-copy"></use>
+               <use xlink:href="#s-text" class="text-copy"></use>
+               <use xlink:href="#s-text" class="text-copy"></use>
+               <use xlink:href="#s-text" class="text-copy"></use>
+            </g>
+         </svg>
+      </div>
+      <div class="socialDate">
+         <div class="Email">
+            <div>Email</div>
+            <div><a class="mygmail" href="">dzizuladanilo@gmail.com</a></div>
+         </div>
+         <div class="Phone">
+            <div>Phone</div>
+            <div>+38 063 625 68 78</div>
+         </div>
+         <div class="SocialLinks">
+            <div>Social Links</div>
+            <div>
+               <img class="instagram" src="img/facebook.png" alt="">
+               <img src="img/social_media_logo_instagram_icon-icons.com_59062.png" alt="">
+               <img src="img/social_media_logo_whatsapp_icon-icons.com_59066.png" alt="">
+               <img src="img/linced.png" alt="">
+               <img src="img/git.png" alt="">
+               <a href="https://secure.skype.com/portal/overview"><img src="img/skype.png" alt=""></a>
+               <!-- <img src="" alt=""> -->
+            </div>
+         </div>
+      </div>
+      <div id="contacts">
+         <h5>Обратная связь</h5>
+         <form id="form_input">
+            <div>
+               <div>
+                  <label for="name">Имя <span>*</span></label>
+               </div>
+               <input type="text" placeholder="Введите имя" name="name" id="name">
+            </div>
+            <div>
+               <div>
+                  <label for="email">Ваша почта <span>*</span></label>
+               </div>
+               <input type="email" placeholder="Введите email" name="email" id="email">
+            </div>
+            <div>
+               <div>
+                  <label for="message">Сообщение <span>*</span></label>
+               </div>
+               <textarea placeholder="Введите ваше сообщение" name="message" id="message"></textarea>
+               <div id="mess_send" class="btn">Отправить</div>
+            </div>
+         </form>
+
+      </div>
+   </footer>
+   <div class="social">
+      <ul>
+         <li>
+            <a href="https://www.instagram.com/danone.dz/" style="border-top-left-radius: 50%;" class="list-item">
+               <i class="icon-recorder">
+                  <img src="img/instagram (3) 1.svg" alt="">
+               </i>
+            </a>
+         </li>
+         <li>
+            <a href="https://web.telegram.org/z/" class="list-item">
+               <i class="icon-recorder">
+                  <img src="img/telegram (2) 1.svg" alt="">
+               </i>
+            </a>
+         </li>
+         <!-- <li>
+            <a class="list-item">
+               <i class='icon-recorder'>
+                  <img src="img/facebook 3.svg" alt="">
+
+               </i>
+            </a>
+         </li> -->
+         <li>
+            <a style="border-bottom-left-radius: 50%;" class="list-item last">
+               <i class='icon-recorder'>
+                  <img src="img/viber 3.svg" alt="">
+               </i>
+            </a>
+         </li>
+      </ul>
+   </div>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script src="/MySite.js"></script>
+</body>
+
+</html>

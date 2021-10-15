@@ -1,0 +1,651 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Suez+One');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Josefin+Sans&display=swap');
+
+:root {
+  --mainColor: #1abc9c;
+}
+
+.svg-container {
+  height: 124px;
+  position: relative;
+  width: 124px;
+  margin-top: 50px;
+
+}
+.training{
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  margin-top: 50px;
+  max-width: 700px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+#overview {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  padding: 100px 0px 200px;
+  margin: 0 auto;
+}
+
+#overview h2 {
+  font-size: 4em
+}
+#overview h4 {
+  color: #ccc; 
+  font-size: 1.5em
+}
+.svg-container h1 {
+  color: #aaa;
+  font-family: "Source Sans Pro";
+  font-size: 1.2rem;
+  letter-spacing: 4px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.svg-container{
+  position: relative;
+  margin: 60px 30px;
+}
+.svg-container div{
+  position: absolute;
+  top: 100px;
+  right: 30px;
+}
+.circle {
+  height: 146px;
+  width: 146px;
+}
+.circle .background_html, .circle .background_react, .circle .background_bs, .circle .background_jq, .circle .background_css, .circle .background_js {
+  fill: transparent;
+  stroke: #1abc9c;
+  transition: all 200ms ease;
+  transform-origin: 47% 45%;
+  transform: rotate(-90deg);
+}
+
+.circle .foreground_html, .circle .foreground_react, .circle .foreground_bs, .circle .foreground_css, .circle .foreground_jq, .circle .foreground_js {
+  fill: transparent;
+  stroke-dasharray: 377;
+  stroke-dashoffset: 377;
+  stroke: #EE3769;
+  transform-origin: 47% 45%;
+  transform: rotate(-90deg);
+  transition: stroke-dashoffset 5000ms ease;
+}
+.circle .foreground_22{
+  fill: transparent;
+  stroke-dasharray: 377;
+  stroke-dashoffset: 377;
+  stroke: #1abc9c;
+  transform-origin: 47% 45%;
+  transform: rotate(-90deg);
+  transition: stroke-dashoffset 5000ms ease;
+}
+.out-num {
+  font-family: Impact, sans-serif;
+  font-size: 25px;
+  /* margin: 30px; */
+  color: rgb(134, 155, 135);
+}
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+a, i {
+  text-decoration: none;
+  color: rgba(204, 204, 204, 0.671);
+}
+ul{
+  list-style-type: none;
+}
+body, html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  /* background-color: #fafafa; */
+  background: url(https://cdn.pixabay.com/photo/2015/11/09/14/43/laptop-1035345_1280.jpg) no-repeat center bottom fixed;
+  background-blend-mode: multiply;
+  background-color: #272727;
+  background-size: cover;
+  font-family: Trebuchet MS, Helvetica;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Шапка сайта */
+
+header {
+  width: 100%;
+  background: transparent;
+  /* float: left; */
+  top: 0px;
+  position: fixed;
+  align-items: center;
+  padding: 17px;
+  display: flex;
+  justify-content: space-between;
+}
+
+header #logo {
+  /* margin-top: 20px;
+  margin-bottom: 20px; */
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  
+}
+#logo img{
+  width: 14%;
+  border-radius: 50%;
+  /* margin-left: 30px; */
+}
+#logo img:hover{
+  box-shadow: 0 0 5px 1px rgb(255, 255, 255, 2);
+}
+header #logo span {
+  font-size: 1.1em;
+  line-height: 45px;
+  margin-left: 20px;
+  font-family: 'Suez One', serif;
+}
+#logo {
+  /* float: left; */
+  width: 30%;
+  font-size: 1.6em;
+}
+
+#about {
+  display: flex;
+  /* float: right; */
+  /* width: 67%; */
+  text-align: center;
+  font-size: 1em;
+  line-height: 40px;
+  /* margin-right: 80px; */
+}
+
+#about > a {
+  align-items: flex-end;
+  margin-right: 70px;
+  background:
+     linear-gradient(
+       to bottom, var(--mainColor) 0%,
+       var(--mainColor) 100%
+     );
+  background-position: 0% 100%;
+  background-repeat: repeat-x;
+  background-size: 2px 2px;
+  color: rgba(255, 255, 255, 0.849);
+  text-decoration: none;
+  transition: background-size .2s;
+  padding: 5px;
+}
+#about > a:hover {
+  color: #000;
+  background-size: 4px 50px;
+}
+.fixed {
+  /* padding: 16px; */
+  z-index: 5000;
+  background-color: rgb(0, 0, 0);
+  border-bottom: 1px solid rgba(192, 192, 192, 0.26);
+  /* position: fixed; */
+}
+
+header.fixed #logo {
+  /* color: #343434; */
+}
+
+/* .fixed #about a {color: #343434} */
+
+/* Главный блок на сайте */
+
+#top {
+  display: flex;
+  /* height: 500px; */
+  flex-direction: column;
+  justify-content: center;
+  /* vertical-align: baseline; */
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 3em;
+  padding: 250px 0px 200px;
+}
+
+#top h1 {
+  font-size: 35px;
+  color: rgba(204, 204, 204, 0.671);
+} 
+#top h2 {
+  font-size: 90px;
+  color: rgb(255, 255, 255);
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+#top h3 {
+  font-size: 20px;
+  color: #ccc;
+  font-family: 'Dancing Script', cursive;
+}
+#top h3::before{
+  display: block;
+  content: '';
+  width: 10%;
+  margin: 0 auto;
+  border-bottom: 1px solid #fafafa5c;
+   margin-bottom: 2%;
+
+}
+#top svg{
+  font-weight:bold;
+  /* width:100%; */
+  height:auto;
+  margin: 0 auto;
+}
+#main::before{
+  display: block;
+  content: '';
+  border-bottom: 1px solid #fafafa5c;
+   margin-bottom: 100px;
+}
+#main::after{
+  display: block;
+  content: '';
+  border-bottom: 1px solid #fafafa5c;
+   margin-top: 10%;
+}
+#main {
+  background-color: #27272775;
+  /*border-top: 2px solid silver;  */
+  color: #e9e9e9cc;
+  font-size: 1.3em;
+  padding: 0px 13%;
+  text-align: center;
+}
+#main span{
+  font-size: .7em;
+  color: rgb(87, 87, 87);
+}
+#main h1{
+  color: #fff;
+  font-size: 3em;
+  margin: 0px 0px 30px;
+  text-shadow: -1px -1px white, 1px 1px gray, 2px 2px #7a7a7a, 3px 3px #757575, 4px 4px #707070, 5px 5px #6b6b6b, 18px 18px 30px rgba(0, 0, 0, .4), 18px 18px 10px rgba(0, 0, 0, .4);
+
+}
+#main h2{
+  color: #fff;
+  font-size: 2.8em;
+  margin: 60px 0px 40px;
+  text-shadow: -1px -1px white, 1px 1px gray, 2px 2px #7a7a7a, 3px 3px #757575, 4px 4px #707070, 5px 5px #6b6b6b, 18px 18px 30px rgba(0, 0, 0, .4), 18px 18px 10px rgba(0, 0, 0, .4);
+
+}
+#main h3 {
+  color: #fff;
+  font-size: 3em;
+  margin: 30px 0px;
+}
+#main div {
+  margin-top: 10px;
+  color: #a0a0a0;
+  font-family: 'Josefin Sans', sans-serif;
+}
+.years{
+  margin-bottom: 30px;
+}
+/* .years::after, .curs::after{
+  display: block;
+  content: "*";
+  margin-top: 10px;
+} */
+.curs {
+  color: #a0a0a0;
+
+  background:
+     linear-gradient(
+       to bottom, var(--mainColor) 0%,
+       var(--mainColor) 100%
+     );
+  background-position: 0% 100%;
+  background-repeat: repeat-x;
+  background-size: 0px 0px;
+  text-decoration: none;
+  transition: all .6s;
+  padding: 2px;
+}
+.curs:hover {
+  color: #000;
+  background-size: 4px 50px;
+}
+#overview .img {
+  /* float: left; */
+  width: 30%;
+  margin-right: 5%;
+  margin-top: 50px;
+}
+
+#overview .img:nth-child(odd) {
+  margin-left: 18%;
+}
+
+#overview img {
+  background: #fafafa;
+  padding: 5px;
+  border: 2px solid silver;
+  /* float: left; */
+  width: 100%;
+  max-width: 500px;
+}
+
+#overview span {
+  /* float: left; */
+  width: 100%;
+  font-size: 2em;
+  margin-top: 10px;
+}
+
+#contacts {
+  width: 70%;
+}
+footer{
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  /* float: left; */
+  padding-bottom: 40px;
+  padding-top: 50px;
+  border-top: 2px solid #464646;
+    background: #000000;
+    color: #fff;
+}
+.socialDate{
+  font-size: 16px;
+  font-family: "Lato";
+  text-align: center;
+  width: 50%;
+  vertical-align: middle;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.socialDate > div{
+  width: 55%;
+  text-align: start;
+  margin: 0 auto;
+}
+.socialDate > div >div:first-child{
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+.mygmail {
+  color: #a0a0a0;
+
+  background:
+     linear-gradient(
+       to bottom, var(--mainColor) 0%,
+       var(--mainColor) 100%
+     );
+  background-position: 0% 100%;
+  background-repeat: repeat-x;
+  background-size: 0px 0px;
+  text-decoration: none;
+  transition: all .6s;
+  padding: 2px;
+}
+
+.socialDate > div a:hover {
+  color: #000;
+ /* color: #1abc9c; */
+ background-size: 4px 50px;
+}
+
+.socialDate > div > div:last-child{
+  color:#a0a0a0;
+}
+.SocialLinks img{
+  /* height: 30%; */
+  width: 10%;
+  transition: all .5s;
+  margin-right: 5px;
+}
+.SocialLinks img:hover{
+  cursor: pointer;
+  /* width: 20%; */
+  transform: scale(1.5);
+}
+h1, h2, h3, h4, h5 {
+  font-family: 'Roboto Slab', serif;
+  font-weight: lighter;
+}
+
+#contacts h5 {
+  font-size: 3em; 
+  color: #ffffff;
+  text-align: center;
+}
+
+#form_input {
+  font-size: 1.1em;
+  width: 65%;
+  margin: 0 auto;
+}
+
+#form_input label {
+  color: #ccc;
+  cursor: pointer;
+  font-size: 1.4em;
+  font-family: 'Roboto Slab', serif;
+}
+
+#form_input label > span {
+  color: #e87e7e;
+}
+
+#form_input input,#form_input textarea {
+  margin-bottom: 10px;
+  width: 95%;
+  padding: 10px 2%;
+  border-radius: 7px;
+  border: 2px solid silver;
+  font-size: 0.9em;
+  color: #4a4a4a;
+}
+
+#form_input input:focus, #form_input textarea:focus {
+  border-color: #333;
+}
+
+.btn {
+  /* float: left; */
+  border-radius: 5px;
+  padding: 5px 9px;
+  font-size: 1.2em;
+  background-color: #EE3769;
+  text-shadow: #454545 0 0 2px;
+  cursor: pointer;
+  color: white;
+  font-family: 'Roboto Slab', serif;
+  width: 96%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.btn:hover {
+  box-shadow: 0 0 5px 1px rgb(255, 255, 255, 2);
+  background-color: #cf1244;
+}
+.content{
+      /* height: 100%; */
+      display: flex;
+      flex-direction: column;
+}
+
+
+.social{
+  position: fixed;
+  margin-top: 200px;
+  right: 0;
+}
+ul {
+  position: relative;
+  /* transform: rotate(-35deg) skew(20deg,5deg); */
+}
+.text ul {
+  list-style-type:circle;
+}
+.icon-recorder img{
+  width: 40px; 
+}
+.list-item {
+  background: rgba(255, 255, 255, 0.062);
+  color: #575757;
+  text-align: center;
+  height: 2.5em;
+  width: 3em;
+  vertical-align: middle;
+  line-height: 2.5em;
+  border-bottom: 1px solid #060606;
+  position: relative;
+  display: block;
+  text-decoration: none;
+  /* box-shadow: -2em 1.5em 0 #e1e1e1; */
+  transition: all .25s linear;
+}
+.list-item:hover {
+    background: #17bc9b;
+    color: #fffcfb7a;
+    transform: translate(-.9em, -.9em);
+    transition: all .25s linear;
+    /* box-shadow: -2em 2em 0 #e1e1e1; */
+}
+    .list-item:hover:before, 
+    .list-item:hover:after { 
+      transition: all .25s linear; 
+    }
+    
+    .list-item:hover:before {
+      background: #12705d;
+      width: 1em;
+      top: .5em;
+      left: 3em;
+    }
+    .list-item:hover:after {
+      background: #12705d;
+      width: 1em;
+      bottom: -2.0em;
+      left: 1.5em;
+      height: 3em;
+    }
+    .last:hover:after {
+      background: #12705d;
+      width: 1em;
+      bottom: -1.5em;
+      left: 2em;
+      height: 2em;
+    }
+    .list-item:before, 
+    .list-item:after {
+    content: '';
+    position: absolute;
+    transition: all .25s linear;
+    width: .0.5em;
+  }
+
+  .list-item:after {
+    width: 1em;
+    bottom: -2.0em;
+    left: 1.5em;
+    height: 3em;
+    transform: rotate(90deg) skew(0,-45deg);
+  }
+  
+  .list-item:before {
+    height: 2.5em;
+    background: #121212;
+    top: .25em;
+    left: 3em;
+    transform: skewY(45deg);
+  }
+  .icon-recorder img{
+    width: 60%;
+    vertical-align: middle;
+    opacity: 0.6;
+}
+.CONTACTS{
+  transform: rotate(270deg) translate(-60px, 80px);
+        color: #17bc9b;
+        margin-bottom: 8%;
+}
+.CONTACTS::before{
+
+  display: block;
+  content: '';
+  border-bottom: 2px solid #fafafa5c;
+   margin-bottom: -25%;
+}
+.CONTACTS::after{
+
+  display: block;
+  content: '';
+  border-bottom: 2px solid #fafafa5c;
+   margin-top: -20%;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+
+.CONTACTS svg {
+    display: block;
+    font: 10.5em 'Montserrat';
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1){
+  stroke: #8a233e;
+  animation-delay: -1;
+}
+
+.text-copy:nth-child(2){
+  stroke: #13816b;
+  animation-delay: -2s;
+}
+
+.text-copy:nth-child(3){
+  stroke: #159c81;
+  animation-delay: -3s;
+}
+
+.text-copy:nth-child(4){
+  stroke: #17bc9b;
+  animation-delay: -4s;
+}
+
+.text-copy:nth-child(5){
+  stroke: #EE3769;
+  animation-delay: -5s;
+}
+
+@keyframes stroke-offset{
+  100% {stroke-dashoffset: -35%;}
+}
